@@ -10,4 +10,5 @@
 #import "PKAddressZip.h"
 
 @interface PKUSAddressZip : PKAddressZip
+
 @end
