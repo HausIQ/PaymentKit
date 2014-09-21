@@ -56,6 +56,39 @@
     }
 }
 
+- (NSString *)cardTypeAsString
+{
+        NSString *result = nil;
+   
+        switch([self cardType]) {
+            case PKCardTypeVisa:
+                result = @"visa";
+                break;
+            case PKCardTypeMasterCard:
+                result = @"mastercard";
+                break;
+            case PKCardTypeAmex:
+                result = @"amex";
+                break;
+            case PKCardTypeDiscover:
+                result = @"discover";
+                break;
+            case PKCardTypeDinersClub:
+                result = @"dinersclub";
+                break;
+            case PKCardTypeJCB:
+                result = @"jcb";
+                break;
+            case PKCardTypeUnknown:
+                result = @"unknown";
+                break;
+            default:
+                result = @"unknown";
+        }
+        
+        return result;
+}
+
 - (NSString *)last4
 {
     if (_number.length >= 4) {

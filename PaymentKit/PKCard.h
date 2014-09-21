@@ -13,6 +13,7 @@
 @property (nonatomic, copy) NSString *number;
 @property (nonatomic, copy) NSString *cvc;
 @property (nonatomic, copy) NSString *addressZip;
+@property (nonatomic, copy) NSString *type;
 @property (nonatomic, assign) NSUInteger expMonth;
 @property (nonatomic, assign) NSUInteger expYear;
 

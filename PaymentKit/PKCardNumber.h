@@ -26,5 +26,6 @@
 
 + (instancetype)cardNumberWithString:(NSString *)string;
 - (instancetype)initWithString:(NSString *)string;
+- (NSString *)cardTypeAsString;
 
 @end

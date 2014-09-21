@@ -349,6 +349,7 @@ static NSString *const kPKOldLocalizedStringsTableName = @"STPaymentLocalizable"
     card.expMonth = [self.cardExpiry month];
     card.expYear = [self.cardExpiry year];
     card.addressZip = [self.cardUSAddressZip string];
+    card.type = [self.cardNumber cardTypeAsString];
 
     return card;
 }
